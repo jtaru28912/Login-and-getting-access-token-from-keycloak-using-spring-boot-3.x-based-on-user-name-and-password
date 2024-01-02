@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+keycloak:
+  auth-server-url: http://localhost:8080/
+  credentials:
+    secret: 'UkCVCdmvO0ixqL9fkA8A0aQczXmoWpSE'
+  realm: check
+  bearer-only: 'true'
+  use-resource-role-mappings: 'true'
+  ssl-required: external
+  resource: checkingRealm
+
+# Logging Configuration
+logging:
+  level:
+    com.example.order: DEBUG
